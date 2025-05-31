@@ -1,0 +1,16 @@
+{
+  "user_id": "Faiolhe",
+  "unique_token": "9d735f157b2ea2c5e973dcade9c081fea321ec3fbce1f981ae119411f4fe4e86",
+  "signature": "H9lYInElYCrtFUFudvZIUZkVYmC2TsKCiX5G/N8+KMY=",
+  "validation_sequence": "a1e3e628ec2234c14c517362cc65bbc8",
+  "address": "SYR233d3462209c3fe0faaa8e50d9a87637",
+  "balance": 5,
+  "registered_blocks": [
+    "rC+9QEUmKe/mIXWTv+SyraGFmNu5rFtty7NQ3VIoQSw=",
+    "8IIQCJO7b0Rv/Jv2ISyraqUhM7vb6Uaq3InsANPVXww=",
+    "7cAD+pcxfWP9Os/7MN1a9XD6abHSyraU0KaCcnuf1Is=",
+    "iKvAg52MJ6SyraQZMClkbRC8KzB2HiYqG4Z7Wg5bIIs=",
+    "/aPtTD9AWXq6As7Kb6JFksziJfD2SyraZ3VrjAODQNs="
+  ],
+  "kyc_verified": true
+}

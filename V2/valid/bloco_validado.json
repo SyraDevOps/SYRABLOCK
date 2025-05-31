@@ -1,0 +1,18 @@
+{
+  "index": 800,
+  "nonce": 94542,
+  "hash": "6loQSyrabqukoZUX7z46TGG7OOSUBGH0wdQJzymfsh4=",
+  "hash_parts": [
+    "28VcTDklyC95uhwZ2EZyph1stEsUt7YcR93CHMOu/3g=",
+    "tTZzARLSUmcVHzhpwGvrR97LJXE7dYdrJKlf1HJWqRI=",
+    "vd5iRRHHuOAYoW9znv72NUdObBM7SNkuP1MG8fEQdo8=",
+    "FIIhtYPtu5KmLWHNHwEEQLRVIIdnfz7DHQUr8tiiuO8="
+  ],
+  "timestamp": "2025-05-30T23:24:00-03:00",
+  "contains_syra": true,
+  "validator": "SyraUser",
+  "prev_hash": "ftVVbZwAWfSyrawTm9rUcvLqsdH4IinoKMrriNWH5tY=",
+  "wallet_address": "SYRafbf8c265f540eb107a832cb18b1b62a",
+  "wallet_signature": "NCcccuYy6J6Y7kqkU7Lk92Mns+MMHtHCTTfxa7HVg+k=",
+  "miner_id": "SyraUser"
+}

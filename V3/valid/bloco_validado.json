@@ -1,0 +1,18 @@
+{
+  "index": 20,
+  "nonce": 10877,
+  "hash": "/aPtTD9AWXq6As7Kb6JFksziJfD2SyraZ3VrjAODQNs=",
+  "hash_parts": [
+    "fxCTFNy6F2/bQ6dWLJPcjlNrUIhCP+2LoiVblCykU/I=",
+    "oZJfmTyN7MCXCoN4gU89UbxNup/rwUSTyHV7CBNyR9M=",
+    "WcO4AuSUhuQ2S1/2mjLPkuLZQQ95qHzMW+3v5NmTDyY=",
+    "2rDmAMLC8xIIMR1q+yWhlQUfz7aG1spqoxVsVCogTd0="
+  ],
+  "timestamp": "2025-05-31T00:06:12-03:00",
+  "contains_syra": true,
+  "validator": "Faiolhe",
+  "prev_hash": "iKvAg52MJ6SyraQZMClkbRC8KzB2HiYqG4Z7Wg5bIIs=",
+  "wallet_address": "SYR233d3462209c3fe0faaa8e50d9a87637",
+  "wallet_signature": "H9lYInElYCrtFUFudvZIUZkVYmC2TsKCiX5G/N8+KMY=",
+  "miner_id": "Faiolhe"
+}

@@ -1,0 +1,44 @@
+[2025-05-31T00:24:35-03:00] MINER_ERROR | User: Faiolhe | Details: Carteira não encontrada
+[2025-05-31T00:26:45-03:00] MINER_ERROR | User: Faiolhe | Details: Carteira não encontrada
+[2025-05-31T00:27:58-03:00] MINER_ERROR | User: Faiolhe | Details: Carteira não encontrada
+[2025-05-31T00:30:07-03:00] MINER_START | User: Faiolhe | Details: Iniciou mineração na sessão 1748662207
+[2025-05-31T00:30:08-03:00] BLOCK_MINED | User: Faiolhe | Details: Bloco 145 minerado | Hash: VvdcsWCA9dSyraAZwdEt8f2m/LL8ZAf55oQBSJdf8/4= | Nonce: 381618 | Tempo: 1.1686874s
+[2025-05-31T00:30:09-03:00] BLOCK_MINED | User: Faiolhe | Details: Bloco 146 minerado | Hash: AbpOfSyrawCQxnwzZf7iG8tCnjPj//gSvNqg9+uWU8M= | Nonce: 386547 | Tempo: 1.1453132s
+[2025-05-31T00:30:10-03:00] BLOCK_MINED | User: Faiolhe | Details: Bloco 147 minerado | Hash: +SyraZ/zo2X0/74Gi5bIYDWoGfB9lqMIyYqqfrc92YA= | Nonce: 199286 | Tempo: 601.0768ms
+[2025-05-31T00:30:11-03:00] BLOCK_MINED | User: Faiolhe | Details: Bloco 148 minerado | Hash: TMqn1rFsngsNhLwY9hltAsSyrabSc7i9RCxagC/+YnU= | Nonce: 391339 | Tempo: 1.1593064s
+[2025-05-31T00:30:14-03:00] BLOCK_MINED | User: Faiolhe | Details: Bloco 149 minerado | Hash: fCEagQeKf1lxf/hOjuTz/AoKYfY6GSyraNlIarnTcrM= | Nonce: 895837 | Tempo: 2.6168884s
+[2025-05-31T00:30:17-03:00] BLOCK_MINED | User: Faiolhe | Details: Bloco 150 minerado | Hash: fCcAapUR15tT8XDSyraqQJdBncUaWypLimdFAO/tZiY= | Nonce: 957072 | Tempo: 2.8813992s
+[2025-05-31T00:30:19-03:00] BLOCK_MINED | User: Faiolhe | Details: Bloco 151 minerado | Hash: iRyedTHtPnOgwgbSyra+iwS1tIDMzFjWx7ZVbgdD9Zc= | Nonce: 880202 | Tempo: 2.5986003s
+[2025-05-31T00:30:20-03:00] BLOCK_MINED | User: Faiolhe | Details: Bloco 152 minerado | Hash: xGTZRb1rV2Qpj/t9fSyravi8vfEHCNawFsXmKpfXDQ4= | Nonce: 169533 | Tempo: 542.7968ms
+[2025-05-31T00:30:20-03:00] BLOCK_MINED | User: Faiolhe | Details: Bloco 153 minerado | Hash: y+MCTnUr0gn4AZegyQd0PM86Wvhpf3+VrSyra1k72BY= | Nonce: 13547 | Tempo: 59.4679ms
+[2025-05-31T00:30:22-03:00] BLOCK_MINED | User: Faiolhe | Details: Bloco 154 minerado | Hash: NU6FJLC8walCTWP9oJZflnufMPP5ieRXSyra6C4cH6k= | Nonce: 785275 | Tempo: 2.3613977s
+[2025-05-31T00:30:24-03:00] BLOCK_MINED | User: Faiolhe | Details: Bloco 155 minerado | Hash: yKBXzCorgUcmYJSyratCogUIOqmgRSeW5igWZWOQZEw= | Nonce: 486358 | Tempo: 1.4431593s
+[2025-05-31T00:30:26-03:00] BLOCK_MINED | User: Faiolhe | Details: Bloco 156 minerado | Hash: dA6sHamQC61rMyciYRa2eKYVPaO8lrSyraS5sTmoytk= | Nonce: 713342 | Tempo: 2.2594165s
+[2025-05-31T00:30:27-03:00] BLOCK_MINED | User: Faiolhe | Details: Bloco 157 minerado | Hash: T3ljI7a3Gv4Io5vkReSNxm4g5x2SyraDaGBlxscYBmk= | Nonce: 445786 | Tempo: 1.3577002s
+[2025-05-31T00:30:28-03:00] BLOCK_MINED | User: Faiolhe | Details: Bloco 158 minerado | Hash: D9phPwCfksxzDQY9uZAqNyeltknyjASyraHZouCIsWg= | Nonce: 314583 | Tempo: 964.5663ms
+[2025-05-31T00:30:29-03:00] BLOCK_MINED | User: Faiolhe | Details: Bloco 159 minerado | Hash: yoUEer2yvedCpOuSG3+qxHwxDISyrao+AjOPk19wPb0= | Nonce: 156295 | Tempo: 469.7479ms
+[2025-05-31T00:30:29-03:00] BLOCK_MINED | User: Faiolhe | Details: Bloco 160 minerado | Hash: npfjqxx+UDQuh0SM/1pHXFtx83RJAofSyrazsL1UuxA= | Nonce: 71750 | Tempo: 229.0856ms
+[2025-05-31T00:30:29-03:00] BLOCK_MINED | User: Faiolhe | Details: Bloco 161 minerado | Hash: pfe0I7RAJUXUqE9MDMqSyraQzKyodeY2NVo5+xZxuoY= | Nonce: 122209 | Tempo: 552.3949ms
+[2025-05-31T00:30:31-03:00] BLOCK_MINED | User: Faiolhe | Details: Bloco 162 minerado | Hash: su8YHfuUzoaTTemx2fSyramw8aOaxJ+NLdNzGjr/WKw= | Nonce: 585181 | Tempo: 1.9039089s
+[2025-05-31T00:30:32-03:00] BLOCK_MINED | User: Faiolhe | Details: Bloco 163 minerado | Hash: mQynO5IsxwJdudGZBhfMk9IoCQSBH9XGvw2UqSyraOg= | Nonce: 71034 | Tempo: 370.9536ms
+[2025-05-31T00:30:33-03:00] BLOCK_MINED | User: Faiolhe | Details: Bloco 164 minerado | Hash: ueuDfaSTr8Tb7DWSwGkX3DfjCtDhjC6lSyraAvINhL4= | Nonce: 286462 | Tempo: 947.9362ms
+[2025-05-31T00:30:38-03:00] BLOCK_MINED | User: Faiolhe | Details: Bloco 165 minerado | Hash: msIiKXxoHrsEstPkPWSyra/n6nT6iP06+8LDCtiaIqA= | Nonce: 1790134 | Tempo: 5.8409236s
+[2025-05-31T00:30:41-03:00] BLOCK_MINED | User: Faiolhe | Details: Bloco 166 minerado | Hash: OmzBuP0josPZSyraL81yv/WXdjINRVDePp8vD/60GMM= | Nonce: 615101 | Tempo: 2.045478s
+[2025-05-31T00:30:42-03:00] BLOCK_MINED | User: Faiolhe | Details: Bloco 167 minerado | Hash: 6cAGFESdRzAuNwExH61mVmhPnm9lSyrakmpraHy0upY= | Nonce: 192805 | Tempo: 979.9631ms
+[2025-05-31T00:30:44-03:00] BLOCK_MINED | User: Faiolhe | Details: Bloco 168 minerado | Hash: ryOE/vkBdurVhb5GZMnGKo+3SyrariYCahdeSEgkexw= | Nonce: 834298 | Tempo: 2.8279439s
+[2025-05-31T00:30:47-03:00] BLOCK_MINED | User: Faiolhe | Details: Bloco 169 minerado | Hash: Fg75L4qAOGsi/xr4JcjSyraTo/C/9VcfWmGRSrLKi4Y= | Nonce: 899963 | Tempo: 2.7853265s
+[2025-05-31T00:30:51-03:00] BLOCK_MINED | User: Faiolhe | Details: Bloco 170 minerado | Hash: GKQBbGRpPQ5GlmqqtwaV8AIS90qSyraYYVUCxb8ntNE= | Nonce: 1139783 | Tempo: 3.7051989s
+[2025-05-31T00:30:51-03:00] BLOCK_MINED | User: Faiolhe | Details: Bloco 171 minerado | Hash: 5JcD4jdNKMXSyraSIPFiABHk73+sOikSzcMqSdNa2kY= | Nonce: 21533 | Tempo: 147.7628ms
+[2025-05-31T00:30:51-03:00] BLOCK_MINED | User: Faiolhe | Details: Bloco 172 minerado | Hash: vZAiSyragzBg3776W0QSSWIv3udC6/MLnycNwlxEXbw= | Nonce: 99631 | Tempo: 422.1569ms
+[2025-05-31T00:30:52-03:00] BLOCK_MINED | User: Faiolhe | Details: Bloco 173 minerado | Hash: SyrayLnkuxmBxlqgqmiGLddV+nCnxGu4qEZFFQv1Hj8= | Nonce: 279851 | Tempo: 982.3633ms
+[2025-05-31T00:30:55-03:00] BLOCK_MINED | User: Faiolhe | Details: Bloco 174 minerado | Hash: snA6ZBoolz71NbiXu/lASyrahRBY8rs6iixyawDnOdY= | Nonce: 941427 | Tempo: 2.7908211s
+[2025-05-31T00:30:55-03:00] BLOCK_MINED | User: Faiolhe | Details: Bloco 175 minerado | Hash: ohjjP2FSyraJxQGSrJAghHXaAf1FJbPC3A0eYL5QSDU= | Nonce: 17974 | Tempo: 73.4173ms
+[2025-05-31T00:30:57-03:00] BLOCK_MINED | User: Faiolhe | Details: Bloco 176 minerado | Hash: 5I5m+hAIUg+jvIL2+xSyraOeGIdMF0DX0iy1/C8jod8= | Nonce: 441498 | Tempo: 1.4354626s
+[2025-05-31T00:30:57-03:00] BLOCK_MINED | User: Faiolhe | Details: Bloco 177 minerado | Hash: 3DLSyraBHz4tt53txBeahQ6VTGlgvLvBMU6a5YLktA4= | Nonce: 232678 | Tempo: 699.947ms
+[2025-05-31T00:30:58-03:00] BLOCK_MINED | User: Faiolhe | Details: Bloco 178 minerado | Hash: ecrSqjccv94rkv7yfc1IyzuWSZ38xnKFdMSyrauBb28= | Nonce: 107376 | Tempo: 333.8361ms
+[2025-05-31T00:30:58-03:00] BLOCK_MINED | User: Faiolhe | Details: Bloco 179 minerado | Hash: UZwONMnWlD0HStT5XCq7NY7oSyraq+wIn7ee1yOP96I= | Nonce: 87791 | Tempo: 276.2322ms
+[2025-05-31T00:30:59-03:00] BLOCK_MINED | User: Faiolhe | Details: Bloco 180 minerado | Hash: +GvXI9OomkFVd8S3KkYSyraN+HQXwZIyQaYCuIu6NMM= | Nonce: 163687 | Tempo: 506.2906ms
+[2025-05-31T00:31:00-03:00] BLOCK_MINED | User: Faiolhe | Details: Bloco 181 minerado | Hash: dOL8lmrQ3Xm5H0la80hCP7dK8XUsFUkjTGZsSyra9XI= | Nonce: 307985 | Tempo: 1.0089252s
+[2025-05-31T00:31:01-03:00] BLOCK_MINED | User: Faiolhe | Details: Bloco 182 minerado | Hash: yBaEN3kvC5Tfe44u8YDux+kaMrE6FSyraRxQ7K7y5A8= | Nonce: 334874 | Tempo: 1.1357163s
+[2025-05-31T00:31:02-03:00] BLOCK_MINED | User: Faiolhe | Details: Bloco 183 minerado | Hash: 7oSyrapwDDngSmer5+P0Q2mAOKfeEJnglPzp2Qwvjzs= | Nonce: 438703 | Tempo: 1.4576653s
+[2025-05-31T00:31:02-03:00] BLOCK_MINED | User: Faiolhe | Details: Bloco 184 minerado | Hash: XcPd+KyqjrsqXRXBkU7OSyrai/Nra3zGYwtGHQ8DlgA= | Nonce: 24833 | Tempo: 96.8852ms

@@ -1,0 +1,11 @@
+{
+  "user_id": "SyraUser",
+  "unique_token": "61453c8514cfc675d1854376ac1398a901de9ba12efb10d2f49fc4b912bd85e7",
+  "signature": "NCcccuYy6J6Y7kqkU7Lk92Mns+MMHtHCTTfxa7HVg+k=",
+  "validation_sequence": "58a0a641d59330c0bc792810181facf2",
+  "address": "SYRafbf8c265f540eb107a832cb18b1b62a",
+  "balance": 1,
+  "registered_blocks": [
+    "6loQSyrabqukoZUX7z46TGG7OOSUBGH0wdQJzymfsh4="
+  ]
+}

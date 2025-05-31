@@ -1,0 +1,17 @@
+{
+  "round_id": "ROUND_1748661949218829700",
+  "block_hash": "rC+9QEUmKe/mIXWTv+SyraGFmNu5rFtty7NQ3VIoQSw=",
+  "selected_validator": "Faiolhe",
+  "validators": [
+    {
+      "user_id": "Faiolhe",
+      "stake": 50,
+      "address": "SYR233d3462209c3fe0faaa8e50d9a87637",
+      "reputation": 100,
+      "is_active": true,
+      "last_validation": "2025-05-31T00:25:13.201094-03:00"
+    }
+  ],
+  "timestamp": "2025-05-31T00:25:49.2188297-03:00",
+  "confirmed": true
+}
