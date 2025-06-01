@@ -1,0 +1,18 @@
+{
+  "index": 1,
+  "hash": "/DCuBbkAC/QeNHQepcqYe+5SyraX/ZH8wKIDmgmsBAo=",
+  "prev_hash": "0000000000000000000000000000000000000000000000000000000000000000",
+  "timestamp": "2025-06-01T18:11:44-03:00",
+  "nonce": 8994237,
+  "difficulty": 0,
+  "custom_token": "ms",
+  "contains_syra": true,
+  "transactions": [
+    [
+      "o4Tv8x5kp8E=",
+      "wh8z25EsjuA=",
+      "UPoE28vpDr4=",
+      "ICTkgQHl3YE="
+    ]
+  ]
+}
