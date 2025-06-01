@@ -5,7 +5,7 @@
 ---
 
 <div align="center">
-  <img src="https://user-images.githubusercontent.com/your-banner-image.png" alt="PTW Blockchain Banner" style="width: 100%; max-width: 740px;"/>
+  <img src="img.png" style="width: 100%; max-width: 740px;"/>
 </div>
 
 ---
