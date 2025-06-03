@@ -1,6 +1,7 @@
 package main
 
 import (
+	"bufio"
 	"crypto/rand"
 	"crypto/sha256"
 	"encoding/base64"
@@ -65,6 +66,14 @@ func hasLeadingZeros(hash string, zeros int) bool {
 	return strings.HasPrefix(hash, prefix)
 }
 
+// hasCustomPrefix verifica se o hash começa com o prefixo personalizado
+func hasCustomPrefix(hash, prefix string) bool {
+	if prefix == "" {
+		return true
+	}
+	return strings.HasPrefix(hash, prefix)
+}
+
 // saveToken salva o token encontrado em um arquivo JSON
 func saveToken(token Token, filename string) error {
 	absPath, err := filepath.Abs(filename)
@@ -95,11 +104,41 @@ func randomBase64String(n int) string {
 	return base64.StdEncoding.EncodeToString(b)
 }
 
+func getLastHashFromFile(filename string) (string, error) {
+	file, err := os.Open(filename)
+	if err != nil {
+		return "", err
+	}
+	defer file.Close()
+
+	dec := json.NewDecoder(file)
+	var lastHash string
+	for {
+		var t Token
+		if err := dec.Decode(&t); err != nil {
+			break
+		}
+		lastHash = t.Hash
+	}
+	if lastHash == "" {
+		return "", fmt.Errorf("nenhum hash encontrado no arquivo")
+	}
+	return lastHash, nil
+}
+
+func promptForPrevHash() string {
+	reader := bufio.NewReader(os.Stdin)
+	fmt.Print("Digite o hash prévio para este token: ")
+	prevHash, _ := reader.ReadString('\n')
+	return strings.TrimSpace(prevHash)
+}
+
 var customToken string
 
 func main() {
 	difficulty := flag.Int("zeros", 0, "Número de zeros no início do hash (opcional, padrão: 0)")
-	prevHash := flag.String("prev", "0000000000000000000000000000000000000000000000000000000000000000", "Hash do bloco anterior")
+	customPrefix := flag.String("dific", "", "Prefixo personalizado que o hash deve começar (ex: 27, 004, lin, Sy, ky)")
+	prevHash := flag.String("prev", "", "Hash do bloco anterior (opcional, será detectado automaticamente)")
 	flag.StringVar(&customToken, "token", "", "Token personalizado obrigatório (além do Syra)")
 	batchSize := flag.Int("batch", 10000, "Tamanho do lote para processamento")
 	outputFile := flag.String("output", "special_token.json", "Arquivo para salvar o token encontrado")
@@ -110,9 +149,30 @@ func main() {
 		return
 	}
 
+	// NOVO: Detecta hash prévio automaticamente do arquivo de saída, se existir
+	prev := *prevHash
+	if prev == "" {
+		if _, err := os.Stat(*outputFile); err == nil {
+			// Arquivo existe, tenta pegar o último hash
+			lastHash, err := getLastHashFromFile(*outputFile)
+			if err == nil && lastHash != "" {
+				prev = lastHash
+				fmt.Printf("ℹ️  Usando hash prévio do último token salvo: %s\n", prev)
+			}
+		}
+	}
+	if prev == "" {
+		// Solicita ao usuário
+		prev = promptForPrevHash()
+		if prev == "" {
+			fmt.Println("❌ Hash prévio é obrigatório para iniciar a mineração.")
+			return
+		}
+	}
+
 	token := Token{
 		Index:        1,
-		PrevHash:     *prevHash,
+		PrevHash:     prev,
 		Timestamp:    time.Now().Format(time.RFC3339),
 		Difficulty:   *difficulty,
 		CustomToken:  customToken,
@@ -121,9 +181,13 @@ func main() {
 
 	fmt.Printf("🚀 PTW Minerador Especial iniciado\n")
 	fmt.Printf("📋 Configurações:\n")
-	fmt.Printf("   • Zeros iniciais: %d\n", *difficulty)
+	if *customPrefix != "" {
+		fmt.Printf("   • Prefixo personalizado: '%s'\n", *customPrefix)
+	} else {
+		fmt.Printf("   • Zeros iniciais: %d\n", *difficulty)
+	}
 	fmt.Printf("   • Token personalizado: '%s'\n", customToken)
-	fmt.Printf("   • Hash anterior: %s...\n", (*prevHash)[:16])
+	fmt.Printf("   • Hash anterior: %s...\n", prev[:16])
 	fmt.Printf("   • Requisito fixo: contém 'Syra'\n")
 	fmt.Printf("   • Arquivo de saída: %s\n", *outputFile)
 	fmt.Printf("\n⏳ Mineração iniciada... (Ctrl+C para cancelar)\n\n")
@@ -164,8 +228,9 @@ func main() {
 					hashBytes := sha256.Sum256([]byte(concat))
 					hashBase64 := base64.StdEncoding.EncodeToString(hashBytes[:])
 
-					// Verifica condições do hash
-					if hasLeadingZeros(hashBase64, *difficulty) &&
+					// NOVO: Verifica prefixo personalizado OU zeros
+					if hasCustomPrefix(hashBase64, *customPrefix) &&
+						(*customPrefix != "" || hasLeadingZeros(hashBase64, *difficulty)) &&
 						strings.Contains(hashBase64, "Syra") &&
 						strings.Contains(hashBase64, customToken) {
 
