@@ -24,6 +24,8 @@ O PTW Blockchain implementa:
 
 ## 🆕 Novidades e Destaques
 
+- **🚀 NOVO: Terminal Unificado**: Interface de terminal única que integra TODAS as funcionalidades do sistema em um executável standalone! (`cli_terminal.go`)
+- **🔤 NOVO: Token Customizado**: Configure seu próprio token e palavra de busca na primeira inicialização para criar blockchains personalizadas!
 - **Transações assinadas com RSA real**: Toda transação é assinada e validada criptograficamente.
 - **Mineração dinâmica**: Dificuldade ajustada automaticamente, monitoramento em tempo real (`mining/difficulty.go`, `mining/difficulty_monitor.go`).
 - **Auditoria e segurança**: Logs estruturados, relatórios (`audit/audit_system.go`), alertas críticos e análise de risco.
@@ -40,8 +42,21 @@ O PTW Blockchain implementa:
 ```
 ptw/
 ├── main.go                    # Minerador manual (legado)
+├── cli_terminal.go            # 🚀 TERMINAL UNIFICADO - Interface única para todo o sistema!
+├── build.sh                   # Script de build para múltiplas plataformas
+├── TERMINAL_README.md         # Documentação completa do Terminal Unificado
 ├── tokens.json                # Blockchain principal
+├── config.json                # Configuração do Terminal Unificado
 ├── go.mod / go.sum            # Dependências
+│
+├── build/                     # Executáveis compilados
+│   ├── syrablock_terminal     # Linux
+│   ├── syrablock_terminal.exe # Windows
+│   └── syrablock_terminal_macos # macOS
+│
+├── data/                      # Dados do sistema
+│   ├── pending_transactions.json
+│   └── file_registry.json
 │
 ├── miner/
 │   ├── miner.go               # Minerador manual
@@ -113,7 +128,52 @@ ptw/
 
 ## 🚀 Guia Rápido de Uso
 
-### 1. Carteiras e Chaves
+### 🌟 RECOMENDADO: Terminal Unificado (Tudo em Um)
+
+O **Terminal Unificado** é a forma mais fácil e rápida de usar TODAS as funcionalidades do SYRABLOCK!
+
+#### Compilar e Executar
+
+```bash
+# Compilar
+./build.sh
+
+# Executar
+./build/syrablock_terminal
+```
+
+Ou diretamente:
+
+```bash
+go run cli_terminal.go
+```
+
+#### Primeira Inicialização
+
+Na primeira vez, você poderá configurar:
+- **Token Customizado** (ex: MeuToken, BITCOIN, etc)
+- **Palavra de Busca** no hash (ex: Meu, Custom, etc)
+- **Porta P2P** (padrão: 8080)
+
+#### Funcionalidades Disponíveis no Terminal
+
+✅ **Carteiras**: Criar, Login, Ver Detalhes, Gerar QR Code, KYC  
+✅ **Transações**: Enviar SYRA, Ver Histórico, Transações Pendentes  
+✅ **Mineração**: Minerar Blocos, Ver Status, Estatísticas  
+✅ **Rede P2P**: Conectar, Ver Status, Listar Peers, Sincronizar  
+✅ **Arquivos**: Registrar, Listar, Verificar Integridade  
+✅ **Blockchain**: Ver Blocos, Validar, Estatísticas  
+✅ **Configurações**: Alterar Token, Configurar Porta, Ver Config  
+
+📖 **Documentação Completa**: Veja `TERMINAL_README.md` para guia detalhado!
+
+---
+
+### Uso Modular (Avançado)
+
+Para uso avançado dos módulos separados:
+
+#### 1. Carteiras e Chaves
 
 ```bash
 cd PWtSY
@@ -123,21 +183,21 @@ cd ../crypto
 go run keypair.go generate Alice
 ```
 
-### 2. Pool de Validadores PoS
+#### 2. Pool de Validadores PoS
 
 ```bash
 cd consensus/pos
 go run pos_consensus.go add_validator Alice 50 SYRA...
 ```
 
-### 3. Iniciar Rede P2P
+#### 3. Iniciar Rede P2P
 
 ```bash
 cd P2P_client
 go run p2p_client.go Alice 8080 start
 ```
 
-### 4. Mineração Automática
+#### 4. Mineração Automática
 
 ```bash
 cd miner/auto-miner
