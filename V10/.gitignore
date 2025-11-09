@@ -1,0 +1,26 @@
+# Build artifacts
+build/
+syrablock_terminal
+syrablock_terminal.exe
+syrablock_terminal_macos
+
+# Configuration files (user-specific)
+config.json
+
+# Data files (generated)
+data/
+
+# Temporary files
+*.tmp
+*.log
+*.swp
+*~
+
+# OS specific
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+*.iml
